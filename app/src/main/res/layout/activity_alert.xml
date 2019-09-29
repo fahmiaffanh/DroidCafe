@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Alert"
+        android:id="@+id/btn_alert"
+        android:layout_centerInParent="true"
+        android:onClick="onClickAlert"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_alert"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_date"
+        android:onClick="onClickDate"
+        android:text="Date"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_alert"
+        android:id="@+id/text_alert"
+        android:text="Test Alert dan Date Picker"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="20dp"/>
+</RelativeLayout>

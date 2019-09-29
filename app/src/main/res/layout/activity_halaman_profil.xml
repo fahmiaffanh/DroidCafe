@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="match_parent" android:layout_height="200dp"
+        android:background="#52deed"
+        android:padding="10dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/donut"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+
+        android:id="@+id/gambar_donat"
+        android:background="#FFFFFF"
+
+        />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/text_nama"
+        android:layout_below="@id/gambar_donat"
+        android:layout_centerHorizontal="true"
+        android:text="Nama Donat"
+        android:textColor="#FFFFFF"
+        />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text_nama"
+        android:id="@+id/layout_follower"
+        android:background="@drawable/bulat"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Photos"
+                android:textSize="20dp"
+                android:id="@+id/text_post"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="300"
+                android:textSize="20dp"
+                android:textColor="#39eab8"
+                android:layout_below="@id/text_post"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Following"
+                android:textSize="20dp"
+                android:id="@+id/text_following"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="3000"
+                android:textSize="20dp"
+                android:textColor="#39eab8"
+                android:layout_below="@id/text_following"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Follower"
+                android:textSize="20dp"
+                android:id="@+id/text_follower"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="300"
+                android:textSize="20dp"
+                android:textColor="#39eab8"
+                android:layout_below="@id/text_follower"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/layout_gambar"
+        android:layout_below="@id/layout_follower"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginVertical="20dp"
+        >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            >
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_mail"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="fahmiaffanh@gmail.com"
+                android:layout_marginHorizontal="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            >
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="081271346436"
+                android:layout_marginHorizontal="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            >
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Add to group"
+                android:layout_marginHorizontal="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            >
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_mess"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Show all comment"
+                android:layout_marginHorizontal="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_below="@id/layout_gambar"
+        android:layout_centerHorizontal="true"
+        android:text="following"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/following"
+        />
+
+</RelativeLayout>
