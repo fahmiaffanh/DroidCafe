@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Alert"></activity>
+        <activity android:name=".pesan"></activity>
+        <activity android:name=".alertdandialog" />
+        <activity android:name=".Alert" />
         <activity android:name=".halaman_profil" />
         <activity android:name=".OrderActivity" />
         <activity

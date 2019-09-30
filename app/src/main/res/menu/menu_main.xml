@@ -9,7 +9,9 @@
     <item android:id="@+id/action_order"
         android:title="@string/action_order"
         android:orderInCategory="10"
-        app:showAsAction="never"
+        android:icon="@drawable/ic_cart"
+        app:showAsAction="always"
+        android:onClick="onOptionsItemSelected"
         />
     <item android:id="@+id/action_favorites"
         android:title="@string/action_favorites"
@@ -19,6 +21,7 @@
     <item android:id="@+id/action_status"
         android:title="@string/action_status"
         android:orderInCategory="20"
-        app:showAsAction="never"
+        android:icon="@drawable/ic_status"
+        app:showAsAction="always"
         />
 </menu>

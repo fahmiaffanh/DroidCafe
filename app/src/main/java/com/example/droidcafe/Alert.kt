@@ -1,5 +1,6 @@
 package com.example.droidcafe
 
+import DatePickerFragment
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.app.Dialog
@@ -31,6 +32,17 @@ class Alert : AppCompatActivity() {
             Toast.makeText(applicationContext,"Press Cancel", Toast.LENGTH_LONG).show()
         }
         alertBuilder.show()
+    }
+    fun processDatePickerResult(year: Int, month: Int, day: Int){
+        val monthString:String = Integer.toString(month+1)
+        val dayString:String = Integer.toString(day)
+        val yearString:String = Integer.toString(year)
+        val dateMessage = "$monthString/$dayString/$yearString"
+        Toast.makeText(this, "Date: $dateMessage",Toast.LENGTH_LONG).show()
+    }
+    fun onClickDate (view: View){
+        val newFragment = DatePickerFragment()
+        newFragment.show(supportFragmentManager,"datePicker")
     }
 
 

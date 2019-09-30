@@ -74,8 +74,12 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_order -> true
+            R.id.action_order -> {
+                startActivity(Intent(this,OrderActivity::class.java))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
